@@ -244,9 +244,9 @@ sampleCoordinates.forEach(({ id, code, lat, long }) => {
         const marker = L.marker([lat, long], {
             icon: L.icon({ // Thay đổi từ L.AwesomeMarkers.icon sang L.icon
                 iconUrl: 'radar.png', // Đường dẫn đến hình ảnh icon
-                iconSize: [30, 32], // Kích thước icon 16x16
-                iconAnchor: [15, 32], // Adjusted anchor point for new size
-                popupAnchor: [0, -16] // Adjusted popup anchor for new size
+                iconSize: [20, 20], // Kích thước icon 16x16
+                iconAnchor: [10, 20], // Adjusted anchor point for new size
+                popupAnchor: [0, -10] // Adjusted popup anchor for new size
             })
         }).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
         const popup = L.popup({"maxWidth": "100%"});
