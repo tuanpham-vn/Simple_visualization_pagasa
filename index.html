@@ -57,22 +57,26 @@
     ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
 
     // Đọc dữ liệu từ file CSV
-    $.get('coors.csv', function(data) {
-        var lines = data.split('\n');
-        for (var i = 1; i < lines.length; i++) { // Bỏ qua dòng tiêu đề
-            var parts = lines[i].split(',');
-            if (parts.length === 3) {
-                var id = parts[0];
-                var lat = parseFloat(parts[1]);
-                var long = parseFloat(parts[2]);
-                
-                var marker = L.marker([lat, long]).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
-                var popup = L.popup({"maxWidth": "100%"});
-                var htmlContent = $(`<div style="width: 100.0%; height: 100.0%;">Station ID: ${id}</div>`)[0];
-                popup.setContent(htmlContent);
-                marker.bindPopup(popup);
-            }
-        }
-    });
+    fetch('coors.csv')
+  .then(response => response.text())
+  .then(data => {
+    const lines = data.split('\n');
+    for (let i = 1; i < lines.length; i++) { // Bỏ qua dòng tiêu đề
+      const parts = lines[i].split(',');
+      if (parts.length === 3) {
+        const id = parts[0];
+        const lat = parseFloat(parts[1]);
+        const long = parseFloat(parts[2]);
+        
+        const marker = L.marker([lat, long]).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        const popup = L.popup({"maxWidth": "100%"});
+        const htmlContent = `<div style="width: 100.0%; height: 100.0%;">Station ID: ${id}</div>`;
+        popup.setContent(htmlContent);
+        marker.bindPopup(popup);
+      }
+    }
+  })
+  .catch(error => console.error('Error loading CSV:', error));
+
 </script>
 </html>
