@@ -56,35 +56,27 @@
         }
     ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
 
-    // Đọc dữ liệu từ file CSV
-    fetch('coors.csv')
-  .then(response => response.text())
-  .then(data => {
-    const lines = data.split('\n');
-    for (let i = 1; i < lines.length; i++) { // Bỏ qua dòng tiêu đề
-      const parts = lines[i].split(',');
-      if (parts.length === 3) {
-        const id = parts[0];
-        const lat = parseFloat(parts[1]);
-        const long = parseFloat(parts[2]);
-        
+    // Dữ liệu tọa độ mẫu giả lập cho Philippines
+    const sampleCoordinates = [
+        { id: 'Station 1', lat: 13.0, long: 122.0 },
+        { id: 'Station 2', lat: 13.5, long: 122.5 },
+        { id: 'Station 3', lat: 14.0, long: 123.0 },
+        { id: 'Station 4', lat: 14.5, long: 123.5 },
+    ];
+
+    // Lặp qua dữ liệu tọa độ mẫu để tạo marker
+    sampleCoordinates.forEach(({ id, lat, long }) => {
         // Kiểm tra lat và long hợp lệ
         if (!isNaN(lat) && !isNaN(long)) {
-          const marker = L.marker([lat, long]).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
-          const popup = L.popup({"maxWidth": "100%"});
-          const htmlContent = `<div style="width: 100.0%; height: 100.0%;">Station ID: ${id}</div>`;
-          popup.setContent(htmlContent);
-          marker.bindPopup(popup);
+            const marker = L.marker([lat, long]).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+            const popup = L.popup({"maxWidth": "100%"});
+            const htmlContent = `<div style="width: 100.0%; height: 100.0%;">Station ID: ${id}</div>`;
+            popup.setContent(htmlContent);
+            marker.bindPopup(popup);
         } else {
-          console.error(`Invalid coordinates for Station ID: ${id}`);
+            console.error(`Invalid coordinates for Station ID: ${id}`);
         }
-      }
-    }
-  })
-  .catch(error => {
-    console.error('Error loading CSV:', error);
-    alert('Có lỗi xảy ra khi tải dữ liệu. Vui lòng kiểm tra console để biết thêm chi tiết.');
-  });
+    });
 
 </script>
 </html>
