@@ -68,15 +68,23 @@
         const lat = parseFloat(parts[1]);
         const long = parseFloat(parts[2]);
         
-        const marker = L.marker([lat, long]).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
-        const popup = L.popup({"maxWidth": "100%"});
-        const htmlContent = `<div style="width: 100.0%; height: 100.0%;">Station ID: ${id}</div>`;
-        popup.setContent(htmlContent);
-        marker.bindPopup(popup);
+        // Kiểm tra lat và long hợp lệ
+        if (!isNaN(lat) && !isNaN(long)) {
+          const marker = L.marker([lat, long]).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+          const popup = L.popup({"maxWidth": "100%"});
+          const htmlContent = `<div style="width: 100.0%; height: 100.0%;">Station ID: ${id}</div>`;
+          popup.setContent(htmlContent);
+          marker.bindPopup(popup);
+        } else {
+          console.error(`Invalid coordinates for Station ID: ${id}`);
+        }
       }
     }
   })
-  .catch(error => console.error('Error loading CSV:', error));
+  .catch(error => {
+    console.error('Error loading CSV:', error);
+    alert('Có lỗi xảy ra khi tải dữ liệu. Vui lòng kiểm tra console để biết thêm chi tiết.');
+  });
 
 </script>
 </html>
