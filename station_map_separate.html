@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c4abf47e2cc6d7c38a653aa95f473f74 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c4abf47e2cc6d7c38a653aa95f473f74" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c4abf47e2cc6d7c38a653aa95f473f74 = L.map(
+                "map_c4abf47e2cc6d7c38a653aa95f473f74",
+                {
+                    center: [13.0, 122.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1d81394b7bdc8fc186f40e3a2484327d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+            var marker_b8e866b2622d7b7b01a7a06a8ff98e1f = L.marker(
+                [14.5047, 121.004751],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_33388134eefcab428ec2f33bdb352ea8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c91c9f02ebaa4d6854f9e74a5f5d1074 = $(`<div id="html_c91c9f02ebaa4d6854f9e74a5f5d1074" style="width: 100.0%; height: 100.0%;">Station: NAIA (MIA),PASAY CITY Code: 429.0</div>`)[0];
+            popup_33388134eefcab428ec2f33bdb352ea8.setContent(html_c91c9f02ebaa4d6854f9e74a5f5d1074);
+        
+
+        marker_b8e866b2622d7b7b01a7a06a8ff98e1f.bindPopup(popup_33388134eefcab428ec2f33bdb352ea8)
+        ;
+
+        
+    
+    
+            var marker_106fc37f71d19c3393f69759d190289f = L.marker(
+                [14.6450820638889, 121.044331108333],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_d700e9f9727a228575afa47704c354a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_370aa98c11fcf3f599323827598fe93c = $(`<div id="html_370aa98c11fcf3f599323827598fe93c" style="width: 100.0%; height: 100.0%;">Station: SCIENCE GARDEN, QUEZON CITY Code: 430.0</div>`)[0];
+            popup_d700e9f9727a228575afa47704c354a1.setContent(html_370aa98c11fcf3f599323827598fe93c);
+        
+
+        marker_106fc37f71d19c3393f69759d190289f.bindPopup(popup_d700e9f9727a228575afa47704c354a1)
+        ;
+
+        
+    
+    
+            var marker_689e27f80cd77c0668ada59d7333db0e = L.marker(
+                [16.404002394444444, 120.60154147499999],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_cee9a419e4b16e910b5d5fa506db4047 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c7cd30c731d308e78fc098250cda1d2a = $(`<div id="html_c7cd30c731d308e78fc098250cda1d2a" style="width: 100.0%; height: 100.0%;">Station: BAGUIO CITY, BENGUET Code: 328.0</div>`)[0];
+            popup_cee9a419e4b16e910b5d5fa506db4047.setContent(html_c7cd30c731d308e78fc098250cda1d2a);
+        
+
+        marker_689e27f80cd77c0668ada59d7333db0e.bindPopup(popup_cee9a419e4b16e910b5d5fa506db4047)
+        ;
+
+        
+    
+    
+            var marker_05e5af6571a7305e4a42e10683c4cf8c = L.marker(
+                [16.086824444444442, 120.35205131111111],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_6c9900acdba4916353522b4b744517ee = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9dcf903db52286460b04abe68f2e3cd8 = $(`<div id="html_9dcf903db52286460b04abe68f2e3cd8" style="width: 100.0%; height: 100.0%;">Station: DAGUPAN CITY, PANGASINAN Code: 325.0</div>`)[0];
+            popup_6c9900acdba4916353522b4b744517ee.setContent(html_9dcf903db52286460b04abe68f2e3cd8);
+        
+
+        marker_05e5af6571a7305e4a42e10683c4cf8c.bindPopup(popup_6c9900acdba4916353522b4b744517ee)
+        ;
+
+        
+    
+    
+            var marker_6157fc5aeb870e39c54014dfdb6a0579 = L.marker(
+                [18.183081769444446, 120.53474861111111],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_b198856f39db4aa8405f21d2a70e29f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb3b87a0ae46b4cafa5fb8c034876624 = $(`<div id="html_bb3b87a0ae46b4cafa5fb8c034876624" style="width: 100.0%; height: 100.0%;">Station: LAOAG CITY,ILOCOS NORTE Code: 223.0</div>`)[0];
+            popup_b198856f39db4aa8405f21d2a70e29f9.setContent(html_bb3b87a0ae46b4cafa5fb8c034876624);
+        
+
+        marker_6157fc5aeb870e39c54014dfdb6a0579.bindPopup(popup_b198856f39db4aa8405f21d2a70e29f9)
+        ;
+
+        
+    
+    
+            var marker_7ff6eb6810b4106a98c2b99322713633 = L.marker(
+                [17.890128980555556, 120.45973251666668],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_320b4f08ba1b3a4cc1aba20f59e2fef3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1dfabdabb94a974cfd5ef04ce9deff4 = $(`<div id="html_c1dfabdabb94a974cfd5ef04ce9deff4" style="width: 100.0%; height: 100.0%;">Station: SINAIT, ILOCOS SUR Code: 222.0</div>`)[0];
+            popup_320b4f08ba1b3a4cc1aba20f59e2fef3.setContent(html_c1dfabdabb94a974cfd5ef04ce9deff4);
+        
+
+        marker_7ff6eb6810b4106a98c2b99322713633.bindPopup(popup_320b4f08ba1b3a4cc1aba20f59e2fef3)
+        ;
+
+        
+    
+    
+            var marker_ffa8bcb994ca1b5b19076729f4a2d220 = L.marker(
+                [18.360172300000002, 121.63039735833333],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_cd78772882f2d7323c1962c453ab0dc5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea233c1828e68820b6dda58fdf506f06 = $(`<div id="html_ea233c1828e68820b6dda58fdf506f06" style="width: 100.0%; height: 100.0%;">Station: APARRI, CAGAYAN Code: 232.0</div>`)[0];
+            popup_cd78772882f2d7323c1962c453ab0dc5.setContent(html_ea233c1828e68820b6dda58fdf506f06);
+        
+
+        marker_ffa8bcb994ca1b5b19076729f4a2d220.bindPopup(popup_cd78772882f2d7323c1962c453ab0dc5)
+        ;
+
+        
+    
+    
+            var marker_9c3c007bcaf797e7355319c2dc152999 = L.marker(
+                [20.427284, 121.970536],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_38f1ed8e0e325eba9f13532e6a2602eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_841d7ba286099b32f6af907a6908f493 = $(`<div id="html_841d7ba286099b32f6af907a6908f493" style="width: 100.0%; height: 100.0%;">Station: BASCO, BATANES (RADAR & SYNOP) Code: 134.0</div>`)[0];
+            popup_38f1ed8e0e325eba9f13532e6a2602eb.setContent(html_841d7ba286099b32f6af907a6908f493);
+        
+
+        marker_9c3c007bcaf797e7355319c2dc152999.bindPopup(popup_38f1ed8e0e325eba9f13532e6a2602eb)
+        ;
+
+        
+    
+    
+            var marker_0215bf8a2e71da0fbc0fc2d5c6e0b749 = L.marker(
+                [19.263, 121.467],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_ef020f6ff7ac914b6c4ad8ca0c20735e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c6bf7038148e1e77ed3cc1791b0eb4a = $(`<div id="html_8c6bf7038148e1e77ed3cc1791b0eb4a" style="width: 100.0%; height: 100.0%;">Station: CALAYAN, CAGAYAN Code: 133.0</div>`)[0];
+            popup_ef020f6ff7ac914b6c4ad8ca0c20735e.setContent(html_8c6bf7038148e1e77ed3cc1791b0eb4a);
+        
+
+        marker_0215bf8a2e71da0fbc0fc2d5c6e0b749.bindPopup(popup_ef020f6ff7ac914b6c4ad8ca0c20735e)
+        ;
+
+        
+    
+    
+            var marker_fe93a294de13e0e59b47b7b8d3702f55 = L.marker(
+                [20.786967, 121.838378],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_eec5dbec957ef2c112d3ff9b1a69316a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ebb8ba4a93b2c23eb74cf37d1a36b50d = $(`<div id="html_ebb8ba4a93b2c23eb74cf37d1a36b50d" style="width: 100.0%; height: 100.0%;">Station: ITBAYAT,BATANES Code: 132.0</div>`)[0];
+            popup_eec5dbec957ef2c112d3ff9b1a69316a.setContent(html_ebb8ba4a93b2c23eb74cf37d1a36b50d);
+        
+
+        marker_fe93a294de13e0e59b47b7b8d3702f55.bindPopup(popup_eec5dbec957ef2c112d3ff9b1a69316a)
+        ;
+
+        
+    
+    
+            var marker_5b750de1e98d31d90ed1776accde4112 = L.marker(
+                [17.6477351611111, 121.75849524166667],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_e7ac3086fd0c8b9523862961d77755d2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b14810e9efbce3eb74d7435cb2430fcb = $(`<div id="html_b14810e9efbce3eb74d7435cb2430fcb" style="width: 100.0%; height: 100.0%;">Station: TUGUEGARAO, CAGAYAN Code: 233.0</div>`)[0];
+            popup_e7ac3086fd0c8b9523862961d77755d2.setContent(html_b14810e9efbce3eb74d7435cb2430fcb);
+        
+
+        marker_5b750de1e98d31d90ed1776accde4112.bindPopup(popup_e7ac3086fd0c8b9523862961d77755d2)
+        ;
+
+        
+    
+    
+            var marker_f8f24fc26c3b87c2558f2da005bdcd06 = L.marker(
+                [15.061722, 120.978333],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_061acf3852fea401be138b7a3d5dce27 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89e46fe11ffe945a0b8f9ef69d3b60d9 = $(`<div id="html_89e46fe11ffe945a0b8f9ef69d3b60d9" style="width: 100.0%; height: 100.0%;">Station: SAN ILDEFONSO, BULACAN Code: 332.0</div>`)[0];
+            popup_061acf3852fea401be138b7a3d5dce27.setContent(html_89e46fe11ffe945a0b8f9ef69d3b60d9);
+        
+
+        marker_f8f24fc26c3b87c2558f2da005bdcd06.bindPopup(popup_061acf3852fea401be138b7a3d5dce27)
+        ;
+
+        
+    
+    
+            var marker_ab358267ab694209c79511b2e2ba5e3f = L.marker(
+                [15.7489902444444, 121.632078333333],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_5853f3b0de2d8cc7c6b6cc87d1249ef0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_91973b047e580a9414548c34894cf919 = $(`<div id="html_91973b047e580a9414548c34894cf919" style="width: 100.0%; height: 100.0%;">Station: BALER, AURORA (RADAR & SYNOP) Code: 334.0</div>`)[0];
+            popup_5853f3b0de2d8cc7c6b6cc87d1249ef0.setContent(html_91973b047e580a9414548c34894cf919);
+        
+
+        marker_ab358267ab694209c79511b2e2ba5e3f.bindPopup(popup_5853f3b0de2d8cc7c6b6cc87d1249ef0)
+        ;
+
+        
+    
+    
+            var marker_3e161c118b72ab794e84a782bffb7980 = L.marker(
+                [16.265082052777778, 122.12883333055555],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_79bac2b888429aab2574afc711e7bec5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_073ea5783e8646f3af7f1af63b26286e = $(`<div id="html_073ea5783e8646f3af7f1af63b26286e" style="width: 100.0%; height: 100.0%;">Station: CASIGURAN, AURORA Code: 336.0</div>`)[0];
+            popup_79bac2b888429aab2574afc711e7bec5.setContent(html_073ea5783e8646f3af7f1af63b26286e);
+        
+
+        marker_3e161c118b72ab794e84a782bffb7980.bindPopup(popup_79bac2b888429aab2574afc711e7bec5)
+        ;
+
+        
+    
+    
+            var marker_bad823cb3a3c71b4756ba1d4c0d590cb = L.marker(
+                [15.1856020222222, 120.548878361111],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_1aa99204793f777c9296dbe881f5f645 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9355e7c47c8750dcb9a1a3b5dbcc4552 = $(`<div id="html_9355e7c47c8750dcb9a1a3b5dbcc4552" style="width: 100.0%; height: 100.0%;">Station: CLARK AIRPORT, PAMPANGA Code: 327.0</div>`)[0];
+            popup_1aa99204793f777c9296dbe881f5f645.setContent(html_9355e7c47c8750dcb9a1a3b5dbcc4552);
+        
+
+        marker_bad823cb3a3c71b4756ba1d4c0d590cb.bindPopup(popup_1aa99204793f777c9296dbe881f5f645)
+        ;
+
+        
+    
+    
+            var marker_13bcec74da1791020228c63174dd8b26 = L.marker(
+                [15.735858330555555, 120.93677175555555],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_462f7aec2cb7571512bfab7fc0a41bc3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd9bcf513043e29eb4812f243c2914b4 = $(`<div id="html_dd9bcf513043e29eb4812f243c2914b4" style="width: 100.0%; height: 100.0%;">Station: CLSU MUNOZ, NUEVA ECIJA Code: 329.0</div>`)[0];
+            popup_462f7aec2cb7571512bfab7fc0a41bc3.setContent(html_dd9bcf513043e29eb4812f243c2914b4);
+        
+
+        marker_13bcec74da1791020228c63174dd8b26.bindPopup(popup_462f7aec2cb7571512bfab7fc0a41bc3)
+        ;
+
+        
+    
+    
+            var marker_d98f24d70da9d3b71d9d9f916aedb97a = L.marker(
+                [14.79193375, 120.27061371111111],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_547788bf19c108e8d33b27bcdce4c90d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5cc4b374ef4efb31ce8b4135cd914bec = $(`<div id="html_5cc4b374ef4efb31ce8b4135cd914bec" style="width: 100.0%; height: 100.0%;">Station: CUBI PT.,SUBIC BAY OLONGAPO Code: 426.0</div>`)[0];
+            popup_547788bf19c108e8d33b27bcdce4c90d.setContent(html_5cc4b374ef4efb31ce8b4135cd914bec);
+        
+
+        marker_d98f24d70da9d3b71d9d9f916aedb97a.bindPopup(popup_547788bf19c108e8d33b27bcdce4c90d)
+        ;
+
+        
+    
+    
+            var marker_1155963a622e43ca76b3348f4703aa82 = L.marker(
+                [15.32615958611111, 119.96902547777778],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_67c43943dfa8eb82806fb7c7ac807898 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b5448ec06036242e4b0c42a532346b3 = $(`<div id="html_7b5448ec06036242e4b0c42a532346b3" style="width: 100.0%; height: 100.0%;">Station: IBA, ZAMBALES Code: 324.0</div>`)[0];
+            popup_67c43943dfa8eb82806fb7c7ac807898.setContent(html_7b5448ec06036242e4b0c42a532346b3);
+        
+
+        marker_1155963a622e43ca76b3348f4703aa82.bindPopup(popup_67c43943dfa8eb82806fb7c7ac807898)
+        ;
+
+        
+    
+    
+            var marker_134609f0634c3eca8ccf661015876adf = L.marker(
+                [14.7412492888889, 120.451880027778],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_f2bc74fc29608e0a8176f29050be139d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f8b7995cc72cdf787aed07e355be4df1 = $(`<div id="html_f8b7995cc72cdf787aed07e355be4df1" style="width: 100.0%; height: 100.0%;">Station: ABUCAY, BATAAN Code: 422.0</div>`)[0];
+            popup_f2bc74fc29608e0a8176f29050be139d.setContent(html_f8b7995cc72cdf787aed07e355be4df1);
+        
+
+        marker_134609f0634c3eca8ccf661015876adf.bindPopup(popup_f2bc74fc29608e0a8176f29050be139d)
+        ;
+
+        
+    
+    
+            var marker_e00056a069aa14d20057e59ae90c2e58 = L.marker(
+                [14.1054354944444, 122.017684586111],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_f7f9c86cf12a22a199f44cbfa384b518 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_075355a0f3ae16de263dd40c90c0a4b6 = $(`<div id="html_075355a0f3ae16de263dd40c90c0a4b6" style="width: 100.0%; height: 100.0%;">Station: ALABAT, QUEZON Code: 435.0</div>`)[0];
+            popup_f7f9c86cf12a22a199f44cbfa384b518.setContent(html_075355a0f3ae16de263dd40c90c0a4b6);
+        
+
+        marker_e00056a069aa14d20057e59ae90c2e58.bindPopup(popup_f7f9c86cf12a22a199f44cbfa384b518)
+        ;
+
+        
+    
+    
+            var marker_ec380108c90f00d6b9ae0a160872d1d4 = L.marker(
+                [14.087664850000001, 121.06238707222222],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_6ab512d966d5c7f0518c509d5ac93ce7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e12863857114d45c35df17f5d5316f56 = $(`<div id="html_e12863857114d45c35df17f5d5316f56" style="width: 100.0%; height: 100.0%;">Station: AMBULONG, TANAUAN, BATANGAS Code: 432.0</div>`)[0];
+            popup_6ab512d966d5c7f0518c509d5ac93ce7.setContent(html_e12863857114d45c35df17f5d5316f56);
+        
+
+        marker_ec380108c90f00d6b9ae0a160872d1d4.bindPopup(popup_6ab512d966d5c7f0518c509d5ac93ce7)
+        ;
+
+        
+    
+    
+            var marker_3e7e282fc6633d9913db26ad52166450 = L.marker(
+                [14.748288647222221, 121.67788923611111],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_3540a2fa32ea565ba779a7d232cd5c2a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45960fc97fa2318d2c528fab94adf3a0 = $(`<div id="html_45960fc97fa2318d2c528fab94adf3a0" style="width: 100.0%; height: 100.0%;">Station: INFANTA, QUEZON Code: 434.0</div>`)[0];
+            popup_3540a2fa32ea565ba779a7d232cd5c2a.setContent(html_45960fc97fa2318d2c528fab94adf3a0);
+        
+
+        marker_3e7e282fc6633d9913db26ad52166450.bindPopup(popup_3540a2fa32ea565ba779a7d232cd5c2a)
+        ;
+
+        
+    
+    
+            var marker_6b484a5837ca94c6fdb114b93287d880 = L.marker(
+                [14.494953, 120.906838],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_522c5a62db2f057e6824f6ee27bf55d1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_310b158654ba1733d9692ee703fa26ce = $(`<div id="html_310b158654ba1733d9692ee703fa26ce" style="width: 100.0%; height: 100.0%;">Station: SANGLEY POINT, CAVITE Code: 428.0</div>`)[0];
+            popup_522c5a62db2f057e6824f6ee27bf55d1.setContent(html_310b158654ba1733d9692ee703fa26ce);
+        
+
+        marker_6b484a5837ca94c6fdb114b93287d880.bindPopup(popup_522c5a62db2f057e6824f6ee27bf55d1)
+        ;
+
+        
+    
+    
+            var marker_4b76f86038bed34e92d2b6da1f684cca = L.marker(
+                [14.5812203194444, 121.369272027778],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_7ffab6c0828ec78cadc556843b637860 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5a7f0c5b50b1112997d546792c318aa0 = $(`<div id="html_5a7f0c5b50b1112997d546792c318aa0" style="width: 100.0%; height: 100.0%;">Station: TANAY, RIZAL (RADAR & SYNOP) Code: 433.0</div>`)[0];
+            popup_7ffab6c0828ec78cadc556843b637860.setContent(html_5a7f0c5b50b1112997d546792c318aa0);
+        
+
+        marker_4b76f86038bed34e92d2b6da1f684cca.bindPopup(popup_7ffab6c0828ec78cadc556843b637860)
+        ;
+
+        
+    
+    
+            var marker_2ff929b2d338b127a2f3cbc47a88aa15 = L.marker(
+                [14.018360358333334, 121.59656985],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_fbf3b9d7baf826f873cf391300763cf9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3ef08f7ebb00c714d13ed7bf9bb107a = $(`<div id="html_e3ef08f7ebb00c714d13ed7bf9bb107a" style="width: 100.0%; height: 100.0%;">Station: TAYABAS, QUEZON Code: 427.0</div>`)[0];
+            popup_fbf3b9d7baf826f873cf391300763cf9.setContent(html_e3ef08f7ebb00c714d13ed7bf9bb107a);
+        
+
+        marker_2ff929b2d338b127a2f3cbc47a88aa15.bindPopup(popup_fbf3b9d7baf826f873cf391300763cf9)
+        ;
+
+        
+    
+    
+            var marker_4aa73760c6762a7f0ae423e73644aa9d = L.marker(
+                [13.5263363222222, 122.408886855556],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_cf191e5ee7b707e79c7d62520e813dc7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_52c32558b88bd354ff8912c162ef7969 = $(`<div id="html_52c32558b88bd354ff8912c162ef7969" style="width: 100.0%; height: 100.0%;">Station: MULANAY, QUEZON Code: 437.0</div>`)[0];
+            popup_cf191e5ee7b707e79c7d62520e813dc7.setContent(html_52c32558b88bd354ff8912c162ef7969);
+        
+
+        marker_4aa73760c6762a7f0ae423e73644aa9d.bindPopup(popup_cf191e5ee7b707e79c7d62520e813dc7)
+        ;
+
+        
+    
+    
+            var marker_984c05675b676f0c6085fe88063122dc = L.marker(
+                [13.414589252777779, 121.186773883333],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_2815d0f33fa9230b2c78ed5d8a4ba644 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_708b53647935d9ba92868e07109fb502 = $(`<div id="html_708b53647935d9ba92868e07109fb502" style="width: 100.0%; height: 100.0%;">Station: CALAPAN, ORIENTAL MINDORO Code: 431.0</div>`)[0];
+            popup_2815d0f33fa9230b2c78ed5d8a4ba644.setContent(html_708b53647935d9ba92868e07109fb502);
+        
+
+        marker_984c05675b676f0c6085fe88063122dc.bindPopup(popup_2815d0f33fa9230b2c78ed5d8a4ba644)
+        ;
+
+        
+    
+    
+            var marker_c6ba5319a8ba168adc33ad88c3c1d9a0 = L.marker(
+                [12.003544, 120.200018],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_ebe8aed02759daa036e888dab48c3043 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1667531d8b8b4e05e9a4396b7ceeaafe = $(`<div id="html_1667531d8b8b4e05e9a4396b7ceeaafe" style="width: 100.0%; height: 100.0%;">Station: CORON, PALAWAN Code: 526.0</div>`)[0];
+            popup_ebe8aed02759daa036e888dab48c3043.setContent(html_1667531d8b8b4e05e9a4396b7ceeaafe);
+        
+
+        marker_c6ba5319a8ba168adc33ad88c3c1d9a0.bindPopup(popup_ebe8aed02759daa036e888dab48c3043)
+        ;
+
+        
+    
+    
+            var marker_f3d3105824c1434d6c5b007d739f9fe3 = L.marker(
+                [10.85411, 121.008167],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_dd48f442143d9f132c0feb0918e48e2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_091f8f18762328ee2b045aa4b58d5109 = $(`<div id="html_091f8f18762328ee2b045aa4b58d5109" style="width: 100.0%; height: 100.0%;">Station: CUYO, PALAWAN Code: 630.0</div>`)[0];
+            popup_dd48f442143d9f132c0feb0918e48e2d.setContent(html_091f8f18762328ee2b045aa4b58d5109);
+        
+
+        marker_f3d3105824c1434d6c5b007d739f9fe3.bindPopup(popup_dd48f442143d9f132c0feb0918e48e2d)
+        ;
+
+        
+    
+    
+            var marker_1712e32ddbc8131ca033296050068265 = L.marker(
+                [11.0521, 114.285],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_3d7518242be8b25b6b6f2aa507287faf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e722944a948d760ad0886ee11d56af2 = $(`<div id="html_7e722944a948d760ad0886ee11d56af2" style="width: 100.0%; height: 100.0%;">Station: PAGASA  ISLAND, PALAWAN Code: 602.0</div>`)[0];
+            popup_3d7518242be8b25b6b6f2aa507287faf.setContent(html_7e722944a948d760ad0886ee11d56af2);
+        
+
+        marker_1712e32ddbc8131ca033296050068265.bindPopup(popup_3d7518242be8b25b6b6f2aa507287faf)
+        ;
+
+        
+    
+    
+            var marker_b5f3faa64b3191d3ede7588700c46366 = L.marker(
+                [9.740134, 118.758613],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_653f9556077110215de761204b549ee5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0104dac774bf67beeab8fc07754e7f35 = $(`<div id="html_0104dac774bf67beeab8fc07754e7f35" style="width: 100.0%; height: 100.0%;">Station: PUERTO PRINCESA, PALAWAN Code: 618.0</div>`)[0];
+            popup_653f9556077110215de761204b549ee5.setContent(html_0104dac774bf67beeab8fc07754e7f35);
+        
+
+        marker_b5f3faa64b3191d3ede7588700c46366.bindPopup(popup_653f9556077110215de761204b549ee5)
+        ;
+
+        
+    
+    
+            var marker_eab57629048b86f3c87533d33191d838 = L.marker(
+                [12.578649, 122.270347],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_e9992ad105908d78323099835f0e5db1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b321cb03216317f3714a418d6542226f = $(`<div id="html_b321cb03216317f3714a418d6542226f" style="width: 100.0%; height: 100.0%;">Station: ROMBLON, ROMBLON Code: 536.0</div>`)[0];
+            popup_e9992ad105908d78323099835f0e5db1.setContent(html_b321cb03216317f3714a418d6542226f);
+        
+
+        marker_eab57629048b86f3c87533d33191d838.bindPopup(popup_e9992ad105908d78323099835f0e5db1)
+        ;
+
+        
+    
+    
+            var marker_b8129b294b8cd5f6d6fd8857bb4d8453 = L.marker(
+                [12.359683566666666, 121.04790245555556],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_786e7629b553606ff7fec1e642683ebf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ec780acfcea33c6f8c58e0dbb0790cf = $(`<div id="html_2ec780acfcea33c6f8c58e0dbb0790cf" style="width: 100.0%; height: 100.0%;">Station: SAN JOSE, OCC. MINDORO Code: 531.0</div>`)[0];
+            popup_786e7629b553606ff7fec1e642683ebf.setContent(html_2ec780acfcea33c6f8c58e0dbb0790cf);
+        
+
+        marker_b8129b294b8cd5f6d6fd8857bb4d8453.bindPopup(popup_786e7629b553606ff7fec1e642683ebf)
+        ;
+
+        
+    
+    
+            var marker_26d3204e341ac25a59c7ec2104526b7f = L.marker(
+                [14.1286112861111, 12.2982632038889],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_48d95481adb24fb03adda8970111dabe = L.popup({"maxWidth": "100%"});
+
+        
+            var html_987f97fb524c8ce234f0e0db9bf21d14 = $(`<div id="html_987f97fb524c8ce234f0e0db9bf21d14" style="width: 100.0%; height: 100.0%;">Station: DAET, CAMARINES NORTE Code: 440.0</div>`)[0];
+            popup_48d95481adb24fb03adda8970111dabe.setContent(html_987f97fb524c8ce234f0e0db9bf21d14);
+        
+
+        marker_26d3204e341ac25a59c7ec2104526b7f.bindPopup(popup_48d95481adb24fb03adda8970111dabe)
+        ;
+
+        
+    
+    
+            var marker_ca9f188f75897593e5ecdbeb5c2d40de = L.marker(
+                [12.839421355555556, 123.99698884444445],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_d6963f55673869a4aaa883dec44c6e2b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98c725679ab9f68d47c5677651da53a7 = $(`<div id="html_98c725679ab9f68d47c5677651da53a7" style="width: 100.0%; height: 100.0%;">Station: JUBAN, SORSOGON Code: 545.0</div>`)[0];
+            popup_d6963f55673869a4aaa883dec44c6e2b.setContent(html_98c725679ab9f68d47c5677651da53a7);
+        
+
+        marker_ca9f188f75897593e5ecdbeb5c2d40de.bindPopup(popup_d6963f55673869a4aaa883dec44c6e2b)
+        ;
+
+        
+    
+    
+            var marker_46529203faaf1204519c44bab6500499 = L.marker(
+                [13.150640508333334, 123.72841989444444],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_a3821c92be9e87395dae97fb7b28ca6c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db5c309250124198737fac0b4362afa8 = $(`<div id="html_db5c309250124198737fac0b4362afa8" style="width: 100.0%; height: 100.0%;">Station: LEGASPI CITY, ALBAY Code: 444.0</div>`)[0];
+            popup_a3821c92be9e87395dae97fb7b28ca6c.setContent(html_db5c309250124198737fac0b4362afa8);
+        
+
+        marker_46529203faaf1204519c44bab6500499.bindPopup(popup_a3821c92be9e87395dae97fb7b28ca6c)
+        ;
+
+        
+    
+    
+            var marker_24e14cc658c78342c5b71b2ecf4ec18b = L.marker(
+                [12.36632, 123.629218],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_46e080109f35ce8515e0d0b064db1bf3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e107bb32a100688d8c2a1ec82dcb7cad = $(`<div id="html_e107bb32a100688d8c2a1ec82dcb7cad" style="width: 100.0%; height: 100.0%;">Station: MASBATE, MASBATE Code: 543.0</div>`)[0];
+            popup_46e080109f35ce8515e0d0b064db1bf3.setContent(html_e107bb32a100688d8c2a1ec82dcb7cad);
+        
+
+        marker_24e14cc658c78342c5b71b2ecf4ec18b.bindPopup(popup_46e080109f35ce8515e0d0b064db1bf3)
+        ;
+
+        
+    
+    
+            var marker_07e5644a2f0c6d947a14fa2c36ff9ab4 = L.marker(
+                [13.577905286111111, 124.20787747777779],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_f72312b89f5cd2a26a3dc72535f05cfb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_dd1abafe52b2eabbeb6ef47bb138704a = $(`<div id="html_dd1abafe52b2eabbeb6ef47bb138704a" style="width: 100.0%; height: 100.0%;">Station: VIRAC SYNOP, CATANDUANES Code: 446.0</div>`)[0];
+            popup_f72312b89f5cd2a26a3dc72535f05cfb.setContent(html_dd1abafe52b2eabbeb6ef47bb138704a);
+        
+
+        marker_07e5644a2f0c6d947a14fa2c36ff9ab4.bindPopup(popup_f72312b89f5cd2a26a3dc72535f05cfb)
+        ;
+
+        
+    
+    
+            var marker_2259dc9b11828577f2bdfed3e2be36dc = L.marker(
+                [10.772746525, 122.579245411111],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_9843f7a562b1a9c02dafe96284bef3b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c17a52fd1017ca33596c63f398dc7042 = $(`<div id="html_c17a52fd1017ca33596c63f398dc7042" style="width: 100.0%; height: 100.0%;">Station: ILOILO COMPLEX, ILOILO RADAR Code: nan</div>`)[0];
+            popup_9843f7a562b1a9c02dafe96284bef3b8.setContent(html_c17a52fd1017ca33596c63f398dc7042);
+        
+
+        marker_2259dc9b11828577f2bdfed3e2be36dc.bindPopup(popup_9843f7a562b1a9c02dafe96284bef3b8)
+        ;
+
+        
+    
+    
+            var marker_9780a81e7af8db2051fa989099d8f6bf = L.marker(
+                [11.600249388888889, 122.74969630833334],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_8f92fa69c38dd8042c6503032f7867cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3fc58598bef4b34a05af7e492de2cdcd = $(`<div id="html_3fc58598bef4b34a05af7e492de2cdcd" style="width: 100.0%; height: 100.0%;">Station: ROXAS CITY, CAPIZ Code: 538.0</div>`)[0];
+            popup_8f92fa69c38dd8042c6503032f7867cc.setContent(html_3fc58598bef4b34a05af7e492de2cdcd);
+        
+
+        marker_9780a81e7af8db2051fa989099d8f6bf.bindPopup(popup_8f92fa69c38dd8042c6503032f7867cc)
+        ;
+
+        
+    
+    
+            var marker_06e1bd1b459a765bf91478e24a0644fb = L.marker(
+                [9.207392, 123.483402],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_b930301a09637cb104cbaccd9678d91f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8307b2b18153a37ddbab17e28a080a80 = $(`<div id="html_8307b2b18153a37ddbab17e28a080a80" style="width: 100.0%; height: 100.0%;">Station: SIQUIJOR, SIQUIJOR Code: 643.0</div>`)[0];
+            popup_b930301a09637cb104cbaccd9678d91f.setContent(html_8307b2b18153a37ddbab17e28a080a80);
+        
+
+        marker_06e1bd1b459a765bf91478e24a0644fb.bindPopup(popup_b930301a09637cb104cbaccd9678d91f)
+        ;
+
+        
+    
+    
+            var marker_2054a11506bdc49ce8b6f287daaa4c8c = L.marker(
+                [9.57011204444444, 123.774904027778],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_347b90ede22fb789a4c1da7cb1ac6c82 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e97d900c2f736c3050dcff62648de860 = $(`<div id="html_e97d900c2f736c3050dcff62648de860" style="width: 100.0%; height: 100.0%;">Station: PANGLAO, BOHOL Code: 644.0</div>`)[0];
+            popup_347b90ede22fb789a4c1da7cb1ac6c82.setContent(html_e97d900c2f736c3050dcff62648de860);
+        
+
+        marker_2054a11506bdc49ce8b6f287daaa4c8c.bindPopup(popup_347b90ede22fb789a4c1da7cb1ac6c82)
+        ;
+
+        
+    
+    
+            var marker_859eb0bad6c60bb81f304b3dfac179bf = L.marker(
+                [9.335443, 123.303342],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_b8a37723ff45cd18c361a0ef6bc3f7f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa683c24aa2b7faee4fa226c24f560d9 = $(`<div id="html_fa683c24aa2b7faee4fa226c24f560d9" style="width: 100.0%; height: 100.0%;">Station: DUMAGUETE CITY, NEGROS OR. Code: 642.0</div>`)[0];
+            popup_b8a37723ff45cd18c361a0ef6bc3f7f9.setContent(html_fa683c24aa2b7faee4fa226c24f560d9);
+        
+
+        marker_859eb0bad6c60bb81f304b3dfac179bf.bindPopup(popup_b8a37723ff45cd18c361a0ef6bc3f7f9)
+        ;
+
+        
+    
+    
+            var marker_6017510a17ff4b2870a7a134926ed358 = L.marker(
+                [10.322329, 123.980118],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_b4ea69b4f9523f137889a3efe9f91025 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c55d3838e26e80007c87da7201117b9a = $(`<div id="html_c55d3838e26e80007c87da7201117b9a" style="width: 100.0%; height: 100.0%;">Station: MACTAN INT'L.AIRPORT,CEBU Code: 646.0</div>`)[0];
+            popup_b4ea69b4f9523f137889a3efe9f91025.setContent(html_c55d3838e26e80007c87da7201117b9a);
+        
+
+        marker_6017510a17ff4b2870a7a134926ed358.bindPopup(popup_b4ea69b4f9523f137889a3efe9f91025)
+        ;
+
+        
+    
+    
+            var marker_6cdaddda5a5fd2dd5a680bc68a07998b = L.marker(
+                [11.6606323638889, 125.443323925],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_24f10f1495bcf10f837b2f35ec18afea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49beee83e351b2dad31fdf836d25956a = $(`<div id="html_49beee83e351b2dad31fdf836d25956a" style="width: 100.0%; height: 100.0%;">Station: nan Code: nan</div>`)[0];
+            popup_24f10f1495bcf10f837b2f35ec18afea.setContent(html_49beee83e351b2dad31fdf836d25956a);
+        
+
+        marker_6cdaddda5a5fd2dd5a680bc68a07998b.bindPopup(popup_24f10f1495bcf10f837b2f35ec18afea)
+        ;
+
+        
+    
+    
+            var marker_36893301b773085209cc549f64a234c2 = L.marker(
+                [12.5053992861111, 124.628498186111],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_7aac57b5bd1a892ca16f6414f86c870b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_40103cce3e0b938225f1fe6728e7886d = $(`<div id="html_40103cce3e0b938225f1fe6728e7886d" style="width: 100.0%; height: 100.0%;">Station: CATARMAN, NORTHERN SAMAR Code: 546.0</div>`)[0];
+            popup_7aac57b5bd1a892ca16f6414f86c870b.setContent(html_40103cce3e0b938225f1fe6728e7886d);
+        
+
+        marker_36893301b773085209cc549f64a234c2.bindPopup(popup_7aac57b5bd1a892ca16f6414f86c870b)
+        ;
+
+        
+    
+    
+            var marker_0ee0516d5b2652232dbf04da2bc32d70 = L.marker(
+                [11.7750643611111, 124.884242477778],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_a5e9705c8c16b7fcfbde049b973189a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fe7e4c0f3906cc6ea5242039f242e3d7 = $(`<div id="html_fe7e4c0f3906cc6ea5242039f242e3d7" style="width: 100.0%; height: 100.0%;">Station: CATBALOGAN, WESTERN SAMAR Code: 548.0</div>`)[0];
+            popup_a5e9705c8c16b7fcfbde049b973189a2.setContent(html_fe7e4c0f3906cc6ea5242039f242e3d7);
+        
+
+        marker_0ee0516d5b2652232dbf04da2bc32d70.bindPopup(popup_a5e9705c8c16b7fcfbde049b973189a2)
+        ;
+
+        
+    
+    
+            var marker_119ac6490709f6ddabd9eaac7dec61f9 = L.marker(
+                [11.0456163611111, 125.755600958333],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_38bf9edddaf66b832db66849ce9c0ba2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_89b13ed619864f4d2f5846a5f1579a1a = $(`<div id="html_89b13ed619864f4d2f5846a5f1579a1a" style="width: 100.0%; height: 100.0%;">Station: GUIUAN, EASTERN SAMAR Code: 558.0</div>`)[0];
+            popup_38bf9edddaf66b832db66849ce9c0ba2.setContent(html_89b13ed619864f4d2f5846a5f1579a1a);
+        
+
+        marker_119ac6490709f6ddabd9eaac7dec61f9.bindPopup(popup_38bf9edddaf66b832db66849ce9c0ba2)
+        ;
+
+        
+    
+    
+            var marker_8126cce081783d837c6e1cfa0ab12aad = L.marker(
+                [10.1349828888889, 124.860981266667],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_a3c0387325a23f59cc28ad2072b6ecdd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_78e43c66d6181f9db0ba2e467dd8ece3 = $(`<div id="html_78e43c66d6181f9db0ba2e467dd8ece3" style="width: 100.0%; height: 100.0%;">Station: MAASIN, SOUTHERN LEYTE Code: 648.0</div>`)[0];
+            popup_a3c0387325a23f59cc28ad2072b6ecdd.setContent(html_78e43c66d6181f9db0ba2e467dd8ece3);
+        
+
+        marker_8126cce081783d837c6e1cfa0ab12aad.bindPopup(popup_a3c0387325a23f59cc28ad2072b6ecdd)
+        ;
+
+        
+    
+    
+            var marker_b6dada389ba76694631e6de516795856 = L.marker(
+                [11.2299791777778, 125.025225247222],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_680520c0653ad11ea51e623ea441496e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c9f24c017fe46c4c01edd3c916e534d = $(`<div id="html_4c9f24c017fe46c4c01edd3c916e534d" style="width: 100.0%; height: 100.0%;">Station: TACLOBAN CITY, LEYTE Code: 550.0</div>`)[0];
+            popup_680520c0653ad11ea51e623ea441496e.setContent(html_4c9f24c017fe46c4c01edd3c916e534d);
+        
+
+        marker_b6dada389ba76694631e6de516795856.bindPopup(popup_680520c0653ad11ea51e623ea441496e)
+        ;
+
+        
+    
+    
+            var marker_e62fe7473f25cd74931dd276e7add295 = L.marker(
+                [8.59933937777778, 123.343638002778],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_f19342b9e82e7336e3d772275647224a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7fedcd130e7be86c628a5257c76716b2 = $(`<div id="html_7fedcd130e7be86c628a5257c76716b2" style="width: 100.0%; height: 100.0%;">Station: DIPOLOG, ZAMBOANGA DEL NORTE Code: 741.0</div>`)[0];
+            popup_f19342b9e82e7336e3d772275647224a.setContent(html_7fedcd130e7be86c628a5257c76716b2);
+        
+
+        marker_e62fe7473f25cd74931dd276e7add295.bindPopup(popup_f19342b9e82e7336e3d772275647224a)
+        ;
+
+        
+    
+    
+            var marker_e7e3a54bf88b752ff8da0c87a750b945 = L.marker(
+                [6.91949478888889, 122.063703802778],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_09bd9d3a20b37053e870d03b661d5b09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a005f93bcc21fa375fa5509d4389d08e = $(`<div id="html_a005f93bcc21fa375fa5509d4389d08e" style="width: 100.0%; height: 100.0%;">Station: ZAMBOANGA, ZAMBOANGA DEL SUR Code: 836.0</div>`)[0];
+            popup_09bd9d3a20b37053e870d03b661d5b09.setContent(html_a005f93bcc21fa375fa5509d4389d08e);
+        
+
+        marker_e7e3a54bf88b752ff8da0c87a750b945.bindPopup(popup_09bd9d3a20b37053e870d03b661d5b09)
+        ;
+
+        
+    
+    
+            var marker_4ac065b98634982bb926a0b1d4774e74 = L.marker(
+                [8.60540887777778, 124.456727738889],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_e444a670f37f045fe6a1d5ba771e1ea5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a96c2969a7768d6c48813deafe1dcb40 = $(`<div id="html_a96c2969a7768d6c48813deafe1dcb40" style="width: 100.0%; height: 100.0%;">Station: LAGUINDINGAN, MISAMIS OR. Code: 747.0</div>`)[0];
+            popup_e444a670f37f045fe6a1d5ba771e1ea5.setContent(html_a96c2969a7768d6c48813deafe1dcb40);
+        
+
+        marker_4ac065b98634982bb926a0b1d4774e74.bindPopup(popup_e444a670f37f045fe6a1d5ba771e1ea5)
+        ;
+
+        
+    
+    
+            var marker_8dc8ea1db3383913f4f249b89168f67d = L.marker(
+                [8.15145651388889, 125.133833255556],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_9b1638e19314a132227e923513b68c8e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1f682161454d15559f1d846ef317d85 = $(`<div id="html_c1f682161454d15559f1d846ef317d85" style="width: 100.0%; height: 100.0%;">Station: MALAYBALAY, BUKIDNON Code: 751.0</div>`)[0];
+            popup_9b1638e19314a132227e923513b68c8e.setContent(html_c1f682161454d15559f1d846ef317d85);
+        
+
+        marker_8dc8ea1db3383913f4f249b89168f67d.bindPopup(popup_9b1638e19314a132227e923513b68c8e)
+        ;
+
+        
+    
+    
+            var marker_d8a938d6c9cf0333de6efcae70b64782 = L.marker(
+                [7.12799805277778, 125.65485679444],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_0c815768dd56cef0ee83987e2b450c80 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88c9390e1fa076cea75b89709de355d3 = $(`<div id="html_88c9390e1fa076cea75b89709de355d3" style="width: 100.0%; height: 100.0%;">Station: DAVAO CITY, DAVAO DEL SUR Code: 753.0</div>`)[0];
+            popup_0c815768dd56cef0ee83987e2b450c80.setContent(html_88c9390e1fa076cea75b89709de355d3);
+        
+
+        marker_d8a938d6c9cf0333de6efcae70b64782.bindPopup(popup_0c815768dd56cef0ee83987e2b450c80)
+        ;
+
+        
+    
+    
+            var marker_989299f9b7d2958ca916ef7182ae5916 = L.marker(
+                [6.05727729166667, 125.103518305556],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_0dff99a2ca1eaee8be283bb860bd11d4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a9ac6d495bc70ea40f5ff10362277b2d = $(`<div id="html_a9ac6d495bc70ea40f5ff10362277b2d" style="width: 100.0%; height: 100.0%;">Station: GENERAL SANTOS, SOUTH. COTABATO Code: 851.0</div>`)[0];
+            popup_0dff99a2ca1eaee8be283bb860bd11d4.setContent(html_a9ac6d495bc70ea40f5ff10362277b2d);
+        
+
+        marker_989299f9b7d2958ca916ef7182ae5916.bindPopup(popup_0dff99a2ca1eaee8be283bb860bd11d4)
+        ;
+
+        
+    
+    
+            var marker_44f6846a2de8cbd2a9391f11d0789d9d = L.marker(
+                [8.947081, 125.482294],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_9214bc34f1a12b45630a1660b5ff6337 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d9af50c286c1d7968bd975c6a901702 = $(`<div id="html_4d9af50c286c1d7968bd975c6a901702" style="width: 100.0%; height: 100.0%;">Station: BUTUAN CITY, AGUSAN DEL NORTE Code: 752.0</div>`)[0];
+            popup_9214bc34f1a12b45630a1660b5ff6337.setContent(html_4d9af50c286c1d7968bd975c6a901702);
+        
+
+        marker_44f6846a2de8cbd2a9391f11d0789d9d.bindPopup(popup_9214bc34f1a12b45630a1660b5ff6337)
+        ;
+
+        
+    
+    
+            var marker_7ac3903502a36620bfdbb45153faa358 = L.marker(
+                [8.367467, 126.338501],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_ebd2a77a36ff7dbf771811ba72fc7d92 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ab6f3567c704fb0b25a6a1c25a9de5c = $(`<div id="html_9ab6f3567c704fb0b25a6a1c25a9de5c" style="width: 100.0%; height: 100.0%;">Station: HINATUAN, SURIGAO DEL SUR Code: 755.0</div>`)[0];
+            popup_ebd2a77a36ff7dbf771811ba72fc7d92.setContent(html_9ab6f3567c704fb0b25a6a1c25a9de5c);
+        
+
+        marker_7ac3903502a36620bfdbb45153faa358.bindPopup(popup_ebd2a77a36ff7dbf771811ba72fc7d92)
+        ;
+
+        
+    
+    
+            var marker_dfec316f9541891c1d0831eef515521f = L.marker(
+                [9.782797, 125.48935],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_fcebb9c58cba61bbcbeb8ae541c439b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3f61d6270b3feac82cd978eb73cdb68 = $(`<div id="html_c3f61d6270b3feac82cd978eb73cdb68" style="width: 100.0%; height: 100.0%;">Station: SURIGAO, SURIGAO DEL NORTE Code: 653.0</div>`)[0];
+            popup_fcebb9c58cba61bbcbeb8ae541c439b9.setContent(html_c3f61d6270b3feac82cd978eb73cdb68);
+        
+
+        marker_dfec316f9541891c1d0831eef515521f.bindPopup(popup_fcebb9c58cba61bbcbeb8ae541c439b9)
+        ;
+
+        
+    
+    
+            var marker_309079a47614482a0f8ac5a0f358bfba = L.marker(
+                [7.161722, 124.214806],
+                {}
+            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+        
+    
+        var popup_10676ff4ac95f74f66781b024ca1a630 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9f628761a4093f846b88bbcad752649f = $(`<div id="html_9f628761a4093f846b88bbcad752649f" style="width: 100.0%; height: 100.0%;">Station: COTABATO CITY, MAGUINDANAO Code: 746.0</div>`)[0];
+            popup_10676ff4ac95f74f66781b024ca1a630.setContent(html_9f628761a4093f846b88bbcad752649f);
+        
+
+        marker_309079a47614482a0f8ac5a0f358bfba.bindPopup(popup_10676ff4ac95f74f66781b024ca1a630)
+        ;
+
+        
+    
+</script>
+</html>
