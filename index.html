@@ -1,263 +1,249 @@
 <!DOCTYPE html>
 <html>
-<head>
-    
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    
-        <script>
-            L_NO_TOUCH = false;
-            L_DISABLE_3D = false;
-        </script>
-    
-    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
-    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
-    
-            <meta name="viewport" content="width=device-width,
-                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-            <style>
-                #map_c4abf47e2cc6d7c38a653aa95f473f74 {
-                    position: relative;
-                    width: 100.0%;
-                    height: 100.0%;
-                    left: 0.0%;
-                    top: 0.0%;
-                }
-            </style>
-        
-</head>
-<body>
-    
-    
-            <div class="folium-map" id="map_c4abf47e2cc6d7c38a653aa95f473f74" ></div>
-        
-</body>
-<script>
-    
-    
-            var map_c4abf47e2cc6d7c38a653aa95f473f74 = L.map(
-                "map_c4abf47e2cc6d7c38a653aa95f473f74",
-                {
-                    center: [13.0, 122.0],
-                    crs: L.CRS.EPSG3857,
-                    zoom: 6,
-                    zoomControl: true,
-                    preferCanvas: false,
-                }
-            );
-
-            
-
-        
-    
-            var tile_layer_1d81394b7bdc8fc186f40e3a2484327d = L.tileLayer(
-                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
-        
-
-
-
-
-    const sampleCoordinatesNew = [
-    { id: 'kc-110464', lat: 8.127026, long: 122.130666 },
-    { id: 'kc-293603', lat: 7.12993, long: 125.61718 },
-    { id: 'kc-288351', lat: 18.120128, long: 121.662395 },
-    { id: 'kc-279426', lat: 11.3211895, long: 119.427758 },
-    { id: 'kc-254788', lat: 7.8221233, long: 126.0500233 },
-    { id: 'kc-134223', lat: 13.7574309, long: 122.9240443 },
-    { id: 'kc-123131', lat: 13.7594, long: 124.153 },
-    { id: 'kc-94881', lat: 9.7997051, long: 118.7564541 },
-    { id: 'kc-272853', lat: 5.8758, long: 125.0834 },
-    { id: 'kc-148508', lat: 4.727768, long: 127.085387 },
-    { id: 'kc-147608', lat: 4.751026, long: 127.1131 },
-    { id: 'kc-308390', lat: 14.5874224, long: 121.1799647 },
-    { id: 'kc-337614', lat: 18.9038393, long: 121.8694382 },
-    { id: 'kc-344712', lat: 11.0548927, long: 122.4753686 },
-    { id: 'kc-342463', lat: 9.156406, long: 124.7867441 },
-    { id: 'kc-344847', lat: 12.5344785, long: 124.8752415 },
-    { id: 'kc-347708', lat: 6.2684913, long: 125.5862947 },
-    { id: 'kc-347189', lat: 17.5939173, long: 121.5126429 },
-    { id: 'kc-365179', lat: 7.1010114, long: 125.5813367 },
-    { id: 'kc-343120', lat: 13.593267, long: 123.248728 },
-    { id: 'kc-343150', lat: 16.194827, long: 120.7779459 },
-    { id: 'kc-343125', lat: 13.710652, long: 123.744829 },
-    { id: 'kc-345343', lat: 6.4963667, long: 124.8385675 },
-    { id: 'kc-347531', lat: 9.9932029, long: 124.4483683 },
-    { id: 'kc-347564', lat: 9.2045304, long: 123.484042 },
-    { id: 'kc-343507', lat: 7.580786, long: 126.1338528 },
-    { id: 'kc-383667', lat: 18.2421, long: 122.0456 },
-    { id: 'kc-381546', lat: 14.4999845, long: 121.4625864 },
-    { id: 'kc-380960', lat: 7.74652, long: 125.723692 },
-    { id: 'kc-385131', lat: 11.5120979, long: 125.3740526 },
-    { id: 'kc-379239', lat: 12.3132886, long: 122.0845377 },
-    { id: 'kc-379258', lat: 12.3295087, long: 121.9734766 },
-    { id: 'kc-385708', lat: 11.28553, long: 125.06661 },
-    { id: 'kc-385803', lat: 11.2864873, long: 125.1277341 },
-    { id: 'kc-385750', lat: 11.2532709, long: 124.7576785 },
-    { id: 'kc-385889', lat: 11.329646, long: 125.5958746 },
-    { id: 'kc-385629', lat: 11.8496591, long: 125.4199073 },
-    { id: 'kc-381240', lat: 9.449515, long: 125.57839 },
-    { id: 'kc-381249', lat: 8.988286, long: 125.341205 },
-    { id: 'kc-379912', lat: 12.0194873, long: 125.0773548 },
-    { id: 'kc-383068', lat: 7.4267442, long: 122.8082935 },
-    { id: 'kc-379440', lat: 12.0557941, long: 123.7294198 },
-    { id: 'kc-381051', lat: 7.1143482, long: 126.1750132 },
-    { id: 'kc-380640', lat: 8.023471, long: 123.9796002 },
-    { id: 'kc-380020', lat: 8.00131784, long: 124.285 },
-    { id: 'kc-387592', lat: 5.5821, long: 125.413 },
-    { id: 'kc-383077', lat: 7.868553, long: 122.5537663 },
-    { id: 'kc-382417', lat: 6.5054071, long: 122.0288118 },
-    { id: 'kc-380774', lat: 8.5400133, long: 123.5667 },
-    { id: 'kc-380429', lat: 8.3269613, long: 123.075743 },
-    { id: 'kc-383307', lat: 16.8292495, long: 121.1907812 },
-    { id: 'kc-380375', lat: 10.4889746, long: 125.1857869 },
-    { id: 'kc-379494', lat: 11.383167, long: 122.2797897 },
-    { id: 'kc-379350', lat: 13.3965477, long: 123.5532073 },
-    { id: 'kc-382408', lat: 6.4571272, long: 122.0198445 },
-    { id: 'kc-380438', lat: 7.7460589, long: 123.1681263 },
-    { id: 'kc-380492', lat: 7.9068194, long: 125.0879866 },
-    { id: 'kc-382876', lat: 4.662573, long: 119.394 },
-    { id: 'kc-380249', lat: 6.7840888, long: 124.4406507 },
-    { id: 'kc-379867', lat: 12.5350384, long: 124.8771318 },
-    { id: 'kc-382498', lat: 6.927135, long: 123.9719633 },
-    { id: 'kc-380303', lat: 6.9219179, long: 124.2994196 },
-    { id: 'kc-382390', lat: 6.6187391, long: 121.5524141 },
-    { id: 'kc-380604', lat: 8.0682798, long: 124.2740404 },
-    { id: 'kc-402171', lat: 11.86718188, long: 124.8986297 },
-    { id: 'kc-402896', lat: 6.1541, long: 124.7815 },
-    { id: 'kc-412669', lat: 12.2873, long: 125.4124 },
-    { id: 'kc-413109', lat: 12.1055187, long: 125.3246769 },
-    { id: 'kc-417169', lat: 12.351326, long: 124.7099006 },
-    { id: 'kc-417830', lat: 9.9769939, long: 125.2738186 },
-    { id: 'kc-416168', lat: 10.6122717, long: 124.9664732 },
-    { id: 'kc-418385', lat: 12.416216, long: 124.5306837 },
-    { id: 'kc-419871', lat: 14.5547238, long: 121.5179034 },
-    { id: 'kc-421933', lat: 12.189666, long: 125.400927 },
-    { id: 'kc-421987', lat: 12.16857, long: 125.257876 },
-    { id: 'kc-423033', lat: 11.19012, long: 125.35921 },
-    { id: 'kc-423502', lat: 12.4093975, long: 124.5179855 },
-    { id: 'kc-425152', lat: 11.3081404, long: 125.0152624 },
-    { id: 'kc-425570', lat: 11.2851758, long: 125.0687405 },
-    { id: 'kc-425683', lat: 11.2770187, long: 125.0120171 },
-    { id: 'kc-425758', lat: 11.1334, long: 124.4268 },
-    { id: 'kc-344707', lat: 10.7125825, long: 122.5594662 },
-];
-
-
-
-sampleCoordinatesNew.forEach(({ id, lat, long }) => {
-    if (!isNaN(lat) && !isNaN(long)) {
-        const marker = L.marker([lat, long], {
-            icon: L.icon({ // Thay đổi từ L.AwesomeMarkers.icon sang L.icon
-                iconUrl: 'satellite.png', // Đường dẫn đến hình ảnh icon
-                iconSize: [12, 12], // Kích thước icon 16x16
-                iconAnchor: [6, 12], // Adjusted anchor point for new size
-                popupAnchor: [0, -6] // Adjusted popup anchor for new size
-            })
-        }).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
-        const popup = L.popup({"maxWidth": "100%"});
-        const htmlContent = `<div style="width: 100.0%; height: 100.0%;">Station ID: ${id}</div>`;
-        popup.setContent(htmlContent);
-        marker.bindPopup(popup);
-    } else {
-        console.error(`Invalid coordinates for Station ID: ${id}`);
-    }
-});
-
-
-const sampleCoordinates = [
-    { id: "NAIA (MIA), PASAY CITY", code: 429.0, lat: 14.5047, long: 121.004751 },
-    { id: "SCIENCE GARDEN, QUEZON CITY", code: 430.0, lat: 14.6450820638889, long: 121.044331108333 },
-    { id: "BAGUIO CITY, BENGUET", code: 328.0, lat: 16.404002394444444, long: 120.60154147499999 },
-    { id: "DAGUPAN CITY, PANGASINAN", code: 325.0, lat: 16.086824444444442, long: 120.35205131111111 },
-    { id: "LAOAG CITY, ILOCOS NORTE", code: 223.0, lat: 18.183081769444446, long: 120.53474861111111 },
-    { id: "SINAIT, ILOCOS SUR", code: 222.0, lat: 17.890128980555556, long: 120.45973251666668 },
-    { id: "APARRI, CAGAYAN", code: 232.0, lat: 18.360172300000002, long: 121.63039735833333 },
-    { id: "BASCO, BATANES (RADAR & SYNOP)", code: 134.0, lat: 20.427284, long: 121.970536 },
-    { id: "CALAYAN, CAGAYAN", code: 133.0, lat: 19.263, long: 121.467 },
-    { id: "ITBAYAT, BATANES", code: 132.0, lat: 20.786967, long: 121.838378 },
-    { id: "TUGUEGARAO, CAGAYAN", code: 233.0, lat: 17.6477351611111, long: 121.75849524166667 },
-    { id: "SAN ILDEFONSO, BULACAN", code: 332.0, lat: 15.061722, long: 120.978333 },
-    { id: "BALER, AURORA (RADAR & SYNOP)", code: 334.0, lat: 15.7489902444444, long: 121.632078333333 },
-    { id: "CASIGURAN, AURORA", code: 336.0, lat: 16.265082052777778, long: 122.12883333055555 },
-    { id: "CLARK AIRPORT, PAMPANGA", code: 327.0, lat: 15.1856020222222, long: 120.548878361111 },
-    { id: "CLSU MUNOZ, NUEVA ECIJA", code: 329.0, lat: 15.735858330555555, long: 120.93677175555555 },
-    { id: "CUBI PT., SUBIC BAY OLONGAPO", code: 426.0, lat: 14.79193375, long: 120.27061371111111 },
-    { id: "IBA, ZAMBALES", code: 324.0, lat: 15.32615958611111, long: 119.96902547777778 },
-    { id: "ABUCAY, BATAAN", code: 422.0, lat: 14.7412492888889, long: 120.451880027778 },
-    { id: "ALABAT, QUEZON", code: 435.0, lat: 14.1054354944444, long: 122.017684586111 },
-    { id: "AMBULONG, TANAUAN, BATANGAS", code: 432.0, lat: 14.087664850000001, long: 121.06238707222222 },
-    { id: "INFANTA, QUEZON", code: 434.0, lat: 14.748288647222221, long: 121.67788923611111 },
-    { id: "SANGLEY POINT, CAVITE", code: 428.0, lat: 14.494953, long: 120.906838 },
-    { id: "TANAY, RIZAL (RADAR & SYNOP)", code: 433.0, lat: 14.5812203194444, long: 121.369272027778 },
-    { id: "TAYABAS, QUEZON", code: 427.0, lat: 14.018360358333334, long: 121.59656985 },
-    { id: "MULANAY, QUEZON", code: 437.0, lat: 13.5263363222222, long: 122.408886855556 },
-    { id: "SAN JOSE, OCC. MINDORO", code: 531.0, lat: 12.359684, long: 121.047902 },
-    { id: "DAET, CAMARINES NORTE", code: 440.0, lat: 14.128611, long: 12.298263 },
-    { id: "JUBAN, SORSOGON", code: 545.0, lat: 12.839421, long: 123.996989 },
-    { id: "LEGASPI CITY, ALBAY", code: 444.0, lat: 13.150641, long: 123.728420 },
-    { id: "MASBATE, MASBATE", code: 543.0, lat: 12.366320, long: 123.629218 },
-    { id: "VIRAC SYNOP, CATANDUANES", code: 446.0, lat: 13.577905, long: 124.207877 },
-    { id: "ILOILO COMPLEX, ILOILO RADAR", code: NaN, lat: 10.772747, long: 122.579245 },
-    { id: "ROXAS CITY, CAPIZ", code: 538.0, lat: 11.600249, long: 122.749696 },
-    { id: "SIQUIJOR, SIQUIJOR", code: 643.0, lat: 9.207392, long: 123.483402 },
-    { id: "PANGLAO, BOHOL", code: 644.0, lat: 9.570112, long: 123.774904 },
-    { id: "DUMAGUETE CITY, NEGROS OR.", code: 642.0, lat: 9.335443, long: 123.303342 },
-    { id: "MACTAN INT'L.AIRPORT,CEBU", code: 646.0, lat: 10.322329, long: 123.980118 },
-    { id: "(Unnamed Station)", code: NaN, lat: 11.660632, long: 125.443324 },
-    { id: "CATARMAN, NORTHERN SAMAR", code: 546.0, lat: 12.505399, long: 124.628498 },
-    { id: "CATBALOGAN, WESTERN SAMAR", code: 548.0, lat: 11.775064, long: 124.884242 },
-    { id: "GUIUAN, EASTERN SAMAR", code: 558.0, lat: 11.045616, long: 125.755601 },
-    { id: "MAASIN, SOUTHERN LEYTE", code: 648.0, lat: 10.134983, long: 124.860981 },
-    { id: "TACLOBAN CITY, LEYTE", code: 550.0, lat: 11.229979, long: 125.025225 },
-    { id: "DIPOLOG, ZAMBOANGA DEL NORTE", code: 741.0, lat: 8.599339, long: 123.343638 },
-    { id: "ZAMBOANGA, ZAMBOANGA DEL SUR", code: 836.0, lat: 6.919495, long: 122.063704 },
-    { id: "LAGUINDINGAN, MISAMIS OR.", code: 747.0, lat: 8.605409, long: 124.456728 },
-    { id: "MALAYBALAY, BUKIDNON", code: 751.0, lat: 8.151457, long: 125.133833 },
-    { id: "DAVAO CITY, DAVAO DEL SUR", code: 753.0, lat: 7.127998, long: 125.654857 },
-    { id: "GENERAL SANTOS, SOUTH. COTABATO", code: 851.0, lat: 6.057277, long: 125.103518 },
-    { id: "BUTUAN CITY, AGUSAN DEL NORTE", code: 752.0, lat: 8.947081, long: 125.482294 },
-    { id: "HINATUAN, SURIGAO DEL SUR", code: 755.0, lat: 8.367467, long: 126.338501 },
-    { id: "SURIGAO, SURIGAO DEL NORTE", code: 653.0, lat: 9.782797, long: 125.489350 },
-    { id: "COTABATO CITY, MAGUINDANAO", code: 746.0, lat: 7.161722, long: 124.214806 },
-    { id: "ROMBLON, ROMBLON", code: 536.0, lat: 12.578649, long: 122.270347 },
-    { id: "CALAPAN, ORIENTAL MINDORO", code: 431.0, lat: 13.414589, long: 121.186774 },
-    { id: "CUYO, PALAWAN", code: 630.0, lat: 10.854110, long: 121.008167 },
-    { id: "CORON, PALAWAN", code: 526.0, lat: 12.003544, long: 120.200018 },
-    { id: "PUERTO PRINCESA, PALAWAN", code: 618.0, lat: 9.740134, long: 118.758613 },
-    { id: "PAGASA ISLAND, PALAWAN", code: 602.0, lat: 11.052100, long: 114.285000 }
-];
-
-// Tạo marker với biểu tượng khác cho bộ dữ liệu mới
-sampleCoordinates.forEach(({ id, code, lat, long }) => {
-    if (!isNaN(lat) && !isNaN(long)) {
-        const marker = L.marker([lat, long], {
-            icon: L.icon({ // Thay đổi từ L.AwesomeMarkers.icon sang L.icon
-                iconUrl: 'radar.png', // Đường dẫn đến hình ảnh icon
-                iconSize: [20, 20], // Kích thước icon 16x16
-                iconAnchor: [10, 20], // Adjusted anchor point for new size
-                popupAnchor: [0, -10] // Adjusted popup anchor for new size
-            })
-        }).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
-        const popup = L.popup({"maxWidth": "100%"});
-        const htmlContent = `<div style="width: 100.0%; height: 100.0%;">Code: ${code}<br>Station: ${id}</div>`;
-        popup.setContent(htmlContent);
-        marker.bindPopup(popup);
-    } else {
-        console.error(`Invalid coordinates for Station ID: ${id}`);
-    }
-});
-   
-    
-</script>
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+      <script>
+         L_NO_TOUCH = false;
+         L_DISABLE_3D = false;
+      </script>
+      <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+      <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+      <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+      <meta name="viewport" content="width=device-width,
+         initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <style>
+         #map_c4abf47e2cc6d7c38a653aa95f473f74 {
+         position: relative;
+         width: 100.0%;
+         height: 100.0%;
+         left: 0.0%;
+         top: 0.0%;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="folium-map" id="map_c4abf47e2cc6d7c38a653aa95f473f74" ></div>
+   </body>
+   <script>
+      var map_c4abf47e2cc6d7c38a653aa95f473f74 = L.map(
+          "map_c4abf47e2cc6d7c38a653aa95f473f74",
+          {
+              center: [13.0, 122.0],
+              crs: L.CRS.EPSG3857,
+              zoom: 6,
+              zoomControl: true,
+              preferCanvas: false,
+          }
+      );
+      
+      
+      
+      var tile_layer_1d81394b7bdc8fc186f40e3a2484327d = L.tileLayer(
+          "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+          {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+      ).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+      
+      
+      
+      const senSors = [
+      { id: 'kc-110464', lat: 8.127026, long: 122.130666 },
+      { id: 'kc-293603', lat: 7.12993, long: 125.61718 },
+      { id: 'kc-288351', lat: 18.120128, long: 121.662395 },
+      { id: 'kc-279426', lat: 11.3211895, long: 119.427758 },
+      { id: 'kc-254788', lat: 7.8221233, long: 126.0500233 },
+      { id: 'kc-134223', lat: 13.7574309, long: 122.9240443 },
+      { id: 'kc-123131', lat: 13.7594, long: 124.153 },
+      { id: 'kc-94881', lat: 9.7997051, long: 118.7564541 },
+      { id: 'kc-272853', lat: 5.8758, long: 125.0834 },
+      { id: 'kc-148508', lat: 4.727768, long: 127.085387 },
+      { id: 'kc-147608', lat: 4.751026, long: 127.1131 },
+      { id: 'kc-308390', lat: 14.5874224, long: 121.1799647 },
+      { id: 'kc-337614', lat: 18.9038393, long: 121.8694382 },
+      { id: 'kc-344712', lat: 11.0548927, long: 122.4753686 },
+      { id: 'kc-342463', lat: 9.156406, long: 124.7867441 },
+      { id: 'kc-344847', lat: 12.5344785, long: 124.8752415 },
+      { id: 'kc-347708', lat: 6.2684913, long: 125.5862947 },
+      { id: 'kc-347189', lat: 17.5939173, long: 121.5126429 },
+      { id: 'kc-365179', lat: 7.1010114, long: 125.5813367 },
+      { id: 'kc-343120', lat: 13.593267, long: 123.248728 },
+      { id: 'kc-343150', lat: 16.194827, long: 120.7779459 },
+      { id: 'kc-343125', lat: 13.710652, long: 123.744829 },
+      { id: 'kc-345343', lat: 6.4963667, long: 124.8385675 },
+      { id: 'kc-347531', lat: 9.9932029, long: 124.4483683 },
+      { id: 'kc-347564', lat: 9.2045304, long: 123.484042 },
+      { id: 'kc-343507', lat: 7.580786, long: 126.1338528 },
+      { id: 'kc-383667', lat: 18.2421, long: 122.0456 },
+      { id: 'kc-381546', lat: 14.4999845, long: 121.4625864 },
+      { id: 'kc-380960', lat: 7.74652, long: 125.723692 },
+      { id: 'kc-385131', lat: 11.5120979, long: 125.3740526 },
+      { id: 'kc-379239', lat: 12.3132886, long: 122.0845377 },
+      { id: 'kc-379258', lat: 12.3295087, long: 121.9734766 },
+      { id: 'kc-385708', lat: 11.28553, long: 125.06661 },
+      { id: 'kc-385803', lat: 11.2864873, long: 125.1277341 },
+      { id: 'kc-385750', lat: 11.2532709, long: 124.7576785 },
+      { id: 'kc-385889', lat: 11.329646, long: 125.5958746 },
+      { id: 'kc-385629', lat: 11.8496591, long: 125.4199073 },
+      { id: 'kc-381240', lat: 9.449515, long: 125.57839 },
+      { id: 'kc-381249', lat: 8.988286, long: 125.341205 },
+      { id: 'kc-379912', lat: 12.0194873, long: 125.0773548 },
+      { id: 'kc-383068', lat: 7.4267442, long: 122.8082935 },
+      { id: 'kc-379440', lat: 12.0557941, long: 123.7294198 },
+      { id: 'kc-381051', lat: 7.1143482, long: 126.1750132 },
+      { id: 'kc-380640', lat: 8.023471, long: 123.9796002 },
+      { id: 'kc-380020', lat: 8.00131784, long: 124.285 },
+      { id: 'kc-387592', lat: 5.5821, long: 125.413 },
+      { id: 'kc-383077', lat: 7.868553, long: 122.5537663 },
+      { id: 'kc-382417', lat: 6.5054071, long: 122.0288118 },
+      { id: 'kc-380774', lat: 8.5400133, long: 123.5667 },
+      { id: 'kc-380429', lat: 8.3269613, long: 123.075743 },
+      { id: 'kc-383307', lat: 16.8292495, long: 121.1907812 },
+      { id: 'kc-380375', lat: 10.4889746, long: 125.1857869 },
+      { id: 'kc-379494', lat: 11.383167, long: 122.2797897 },
+      { id: 'kc-379350', lat: 13.3965477, long: 123.5532073 },
+      { id: 'kc-382408', lat: 6.4571272, long: 122.0198445 },
+      { id: 'kc-380438', lat: 7.7460589, long: 123.1681263 },
+      { id: 'kc-380492', lat: 7.9068194, long: 125.0879866 },
+      { id: 'kc-382876', lat: 4.662573, long: 119.394 },
+      { id: 'kc-380249', lat: 6.7840888, long: 124.4406507 },
+      { id: 'kc-379867', lat: 12.5350384, long: 124.8771318 },
+      { id: 'kc-382498', lat: 6.927135, long: 123.9719633 },
+      { id: 'kc-380303', lat: 6.9219179, long: 124.2994196 },
+      { id: 'kc-382390', lat: 6.6187391, long: 121.5524141 },
+      { id: 'kc-380604', lat: 8.0682798, long: 124.2740404 },
+      { id: 'kc-402171', lat: 11.86718188, long: 124.8986297 },
+      { id: 'kc-402896', lat: 6.1541, long: 124.7815 },
+      { id: 'kc-412669', lat: 12.2873, long: 125.4124 },
+      { id: 'kc-413109', lat: 12.1055187, long: 125.3246769 },
+      { id: 'kc-417169', lat: 12.351326, long: 124.7099006 },
+      { id: 'kc-417830', lat: 9.9769939, long: 125.2738186 },
+      { id: 'kc-416168', lat: 10.6122717, long: 124.9664732 },
+      { id: 'kc-418385', lat: 12.416216, long: 124.5306837 },
+      { id: 'kc-419871', lat: 14.5547238, long: 121.5179034 },
+      { id: 'kc-421933', lat: 12.189666, long: 125.400927 },
+      { id: 'kc-421987', lat: 12.16857, long: 125.257876 },
+      { id: 'kc-423033', lat: 11.19012, long: 125.35921 },
+      { id: 'kc-423502', lat: 12.4093975, long: 124.5179855 },
+      { id: 'kc-425152', lat: 11.3081404, long: 125.0152624 },
+      { id: 'kc-425570', lat: 11.2851758, long: 125.0687405 },
+      { id: 'kc-425683', lat: 11.2770187, long: 125.0120171 },
+      { id: 'kc-425758', lat: 11.1334, long: 124.4268 },
+      { id: 'kc-344707', lat: 10.7125825, long: 122.5594662 },
+      ];
+      
+      
+      
+      senSors.forEach(({ id, lat, long }) => {
+      if (!isNaN(lat) && !isNaN(long)) {
+      const marker = L.marker([lat, long], {
+      icon: L.icon({ 
+          iconUrl: 'satellite-dish.png', 
+          iconSize: [12, 12], 
+          iconAnchor: [6, 12], 
+          popupAnchor: [0, -6] 
+      })
+      }).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+      const popup = L.popup({"maxWidth": "100%"});
+      const htmlContent = `<div style="width: 100.0%; height: 100.0%;">Station ID: ${id}</div>`;
+      popup.setContent(htmlContent);
+      marker.bindPopup(popup);
+      } else {
+      console.error(`Invalid coordinates for Station ID: ${id}`);
+      }
+      });
+      
+      
+      const radarStation = [
+      { id: "NAIA (MIA), PASAY CITY", code: 429.0, lat: 14.5047, long: 121.004751 },
+      { id: "SCIENCE GARDEN, QUEZON CITY", code: 430.0, lat: 14.6450820638889, long: 121.044331108333 },
+      { id: "BAGUIO CITY, BENGUET", code: 328.0, lat: 16.404002394444444, long: 120.60154147499999 },
+      { id: "DAGUPAN CITY, PANGASINAN", code: 325.0, lat: 16.086824444444442, long: 120.35205131111111 },
+      { id: "LAOAG CITY, ILOCOS NORTE", code: 223.0, lat: 18.183081769444446, long: 120.53474861111111 },
+      { id: "SINAIT, ILOCOS SUR", code: 222.0, lat: 17.890128980555556, long: 120.45973251666668 },
+      { id: "APARRI, CAGAYAN", code: 232.0, lat: 18.360172300000002, long: 121.63039735833333 },
+      { id: "BASCO, BATANES (RADAR & SYNOP)", code: 134.0, lat: 20.427284, long: 121.970536 },
+      { id: "CALAYAN, CAGAYAN", code: 133.0, lat: 19.263, long: 121.467 },
+      { id: "ITBAYAT, BATANES", code: 132.0, lat: 20.786967, long: 121.838378 },
+      { id: "TUGUEGARAO, CAGAYAN", code: 233.0, lat: 17.6477351611111, long: 121.75849524166667 },
+      { id: "SAN ILDEFONSO, BULACAN", code: 332.0, lat: 15.061722, long: 120.978333 },
+      { id: "BALER, AURORA (RADAR & SYNOP)", code: 334.0, lat: 15.7489902444444, long: 121.632078333333 },
+      { id: "CASIGURAN, AURORA", code: 336.0, lat: 16.265082052777778, long: 122.12883333055555 },
+      { id: "CLARK AIRPORT, PAMPANGA", code: 327.0, lat: 15.1856020222222, long: 120.548878361111 },
+      { id: "CLSU MUNOZ, NUEVA ECIJA", code: 329.0, lat: 15.735858330555555, long: 120.93677175555555 },
+      { id: "CUBI PT., SUBIC BAY OLONGAPO", code: 426.0, lat: 14.79193375, long: 120.27061371111111 },
+      { id: "IBA, ZAMBALES", code: 324.0, lat: 15.32615958611111, long: 119.96902547777778 },
+      { id: "ABUCAY, BATAAN", code: 422.0, lat: 14.7412492888889, long: 120.451880027778 },
+      { id: "ALABAT, QUEZON", code: 435.0, lat: 14.1054354944444, long: 122.017684586111 },
+      { id: "AMBULONG, TANAUAN, BATANGAS", code: 432.0, lat: 14.087664850000001, long: 121.06238707222222 },
+      { id: "INFANTA, QUEZON", code: 434.0, lat: 14.748288647222221, long: 121.67788923611111 },
+      { id: "SANGLEY POINT, CAVITE", code: 428.0, lat: 14.494953, long: 120.906838 },
+      { id: "TANAY, RIZAL (RADAR & SYNOP)", code: 433.0, lat: 14.5812203194444, long: 121.369272027778 },
+      { id: "TAYABAS, QUEZON", code: 427.0, lat: 14.018360358333334, long: 121.59656985 },
+      { id: "MULANAY, QUEZON", code: 437.0, lat: 13.5263363222222, long: 122.408886855556 },
+      { id: "SAN JOSE, OCC. MINDORO", code: 531.0, lat: 12.359684, long: 121.047902 },
+      { id: "DAET, CAMARINES NORTE", code: 440.0, lat: 14.128611, long: 12.298263 },
+      { id: "JUBAN, SORSOGON", code: 545.0, lat: 12.839421, long: 123.996989 },
+      { id: "LEGASPI CITY, ALBAY", code: 444.0, lat: 13.150641, long: 123.728420 },
+      { id: "MASBATE, MASBATE", code: 543.0, lat: 12.366320, long: 123.629218 },
+      { id: "VIRAC SYNOP, CATANDUANES", code: 446.0, lat: 13.577905, long: 124.207877 },
+      { id: "ILOILO COMPLEX, ILOILO RADAR", code: NaN, lat: 10.772747, long: 122.579245 },
+      { id: "ROXAS CITY, CAPIZ", code: 538.0, lat: 11.600249, long: 122.749696 },
+      { id: "SIQUIJOR, SIQUIJOR", code: 643.0, lat: 9.207392, long: 123.483402 },
+      { id: "PANGLAO, BOHOL", code: 644.0, lat: 9.570112, long: 123.774904 },
+      { id: "DUMAGUETE CITY, NEGROS OR.", code: 642.0, lat: 9.335443, long: 123.303342 },
+      { id: "MACTAN INT'L.AIRPORT,CEBU", code: 646.0, lat: 10.322329, long: 123.980118 },
+      { id: "(Unnamed Station)", code: NaN, lat: 11.660632, long: 125.443324 },
+      { id: "CATARMAN, NORTHERN SAMAR", code: 546.0, lat: 12.505399, long: 124.628498 },
+      { id: "CATBALOGAN, WESTERN SAMAR", code: 548.0, lat: 11.775064, long: 124.884242 },
+      { id: "GUIUAN, EASTERN SAMAR", code: 558.0, lat: 11.045616, long: 125.755601 },
+      { id: "MAASIN, SOUTHERN LEYTE", code: 648.0, lat: 10.134983, long: 124.860981 },
+      { id: "TACLOBAN CITY, LEYTE", code: 550.0, lat: 11.229979, long: 125.025225 },
+      { id: "DIPOLOG, ZAMBOANGA DEL NORTE", code: 741.0, lat: 8.599339, long: 123.343638 },
+      { id: "ZAMBOANGA, ZAMBOANGA DEL SUR", code: 836.0, lat: 6.919495, long: 122.063704 },
+      { id: "LAGUINDINGAN, MISAMIS OR.", code: 747.0, lat: 8.605409, long: 124.456728 },
+      { id: "MALAYBALAY, BUKIDNON", code: 751.0, lat: 8.151457, long: 125.133833 },
+      { id: "DAVAO CITY, DAVAO DEL SUR", code: 753.0, lat: 7.127998, long: 125.654857 },
+      { id: "GENERAL SANTOS, SOUTH. COTABATO", code: 851.0, lat: 6.057277, long: 125.103518 },
+      { id: "BUTUAN CITY, AGUSAN DEL NORTE", code: 752.0, lat: 8.947081, long: 125.482294 },
+      { id: "HINATUAN, SURIGAO DEL SUR", code: 755.0, lat: 8.367467, long: 126.338501 },
+      { id: "SURIGAO, SURIGAO DEL NORTE", code: 653.0, lat: 9.782797, long: 125.489350 },
+      { id: "COTABATO CITY, MAGUINDANAO", code: 746.0, lat: 7.161722, long: 124.214806 },
+      { id: "ROMBLON, ROMBLON", code: 536.0, lat: 12.578649, long: 122.270347 },
+      { id: "CALAPAN, ORIENTAL MINDORO", code: 431.0, lat: 13.414589, long: 121.186774 },
+      { id: "CUYO, PALAWAN", code: 630.0, lat: 10.854110, long: 121.008167 },
+      { id: "CORON, PALAWAN", code: 526.0, lat: 12.003544, long: 120.200018 },
+      { id: "PUERTO PRINCESA, PALAWAN", code: 618.0, lat: 9.740134, long: 118.758613 },
+      { id: "PAGASA ISLAND, PALAWAN", code: 602.0, lat: 11.052100, long: 114.285000 }
+      ];
+      
+      
+      radarStation.forEach(({ id, code, lat, long }) => {
+      if (!isNaN(lat) && !isNaN(long)) {
+      const marker = L.marker([lat, long], {
+      icon: L.icon({ 
+          iconUrl: 'radar.png', 
+          iconSize: [20, 20], 
+          iconAnchor: [10, 20], 
+          popupAnchor: [0, -10] 
+      })
+      }).addTo(map_c4abf47e2cc6d7c38a653aa95f473f74);
+      const popup = L.popup({"maxWidth": "100%"});
+      const htmlContent = `<div style="width: 100.0%; height: 100.0%;">Code: ${code}<br>Station: ${id}</div>`;
+      popup.setContent(htmlContent);
+      marker.bindPopup(popup);
+      } else {
+      console.error(`Invalid coordinates for Station ID: ${id}`);
+      }
+      });
+      
+      
+   </script>
 </html>
